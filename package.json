@@ -1,0 +1,10 @@
+{
+  "name": "bah-website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "BAH Transporters website \u2014 air freight UK \u21c4 The Gambia (static pages + Supabase).",
+  "scripts": {
+    "site": "node build.mjs",
+    "dev": "node serve.mjs"
+  }
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /invoice
+Sitemap: https://bahtransporters.com/sitemap.xml

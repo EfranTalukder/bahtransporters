@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="BAH Transporters">
+  <defs>
+    <linearGradient id="bahEmber" x1="6" y1="2" x2="58" y2="62" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#EF6A3B"/>
+      <stop offset="1" stop-color="#C7441B"/>
+    </linearGradient>
+    <mask id="bahGap" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+      <rect width="64" height="64" fill="#fff"/><circle cx="32" cy="28" r="8.6" fill="#000"/>
+    </mask>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#bahEmber)"/>
+  <!-- the route between the two homes, Birmingham and Tallinding -->
+  <path d="M17.2 37.2 Q32 18.8 46.8 37.2" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="0.01 5.99" opacity="0.92" mask="url(#bahGap)"/>
+  <circle cx="12.5" cy="44" r="3.6" fill="#FFFFFF"/>
+  <circle cx="51.5" cy="44" r="3.6" fill="none" stroke="#FFFFFF" stroke-width="2.4"/>
+  <!-- the plane at the top of the route, flying on -->
+  <path transform="translate(32 28) rotate(90) scale(0.86)" fill="#FFFFFF"
+        d="M0 -9C1.2 -9 1.8 -7.5 1.8 -6V-2L9 2.4V4.5L1.8 2.3V6L4 7.8V9.2L0 8L-4 9.2V7.8L-1.8 6V2.3L-9 4.5V2.4L-1.8 -2V-6C-1.8 -7.5 -1.2 -9 0 -9Z"/>
+</svg>

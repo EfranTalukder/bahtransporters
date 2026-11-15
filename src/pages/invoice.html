@@ -1,0 +1,45 @@
+<!--meta
+title: Invoice — BAH Transporters
+description: Your BAH Transporters invoice.
+path: /invoice
+layout: bare
+body_class: bg-sand-2
+-->
+<!--head
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    .inv-page { background: #fff; border-radius: 1.75rem; box-shadow: 0 2px 4px rgba(28,25,22,.04), 0 24px 48px -24px rgba(28,25,22,.32); overflow: hidden; }
+    .inv-top { border-bottom: 4px solid #E25A2E; }
+    .inv-label { font-size: .68rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #8F877C; }
+    .inv-status { display: inline-flex; border-radius: 999px; padding: .3rem .8rem; font-size: .75rem; font-weight: 800; letter-spacing: .04em; }
+    .inv-status.paid { background: #E6F5EE; color: #177A4C; } .inv-status.part { background: #FDEEE7; color: #9E3714; }
+    .inv-status.unpaid { background: #FDECEC; color: #B42C32; } .inv-status.tbc { background: #EFE8DF; color: #5A534B; }
+    .inv-due.paid { background: #E6F5EE; } .inv-due.part, .inv-due.unpaid { background: #1C1916; color: #fff; } .inv-due.tbc { background: #EFE8DF; }
+    .inv-due.part .inv-label, .inv-due.unpaid .inv-label { color: rgba(255,255,255,.6); }
+    @page { size: A4; margin: 0; }
+    @media print {
+      html { font-size: 10.5px; }
+      body { background: #fff !important; }
+      .inv-toolbar { display: none !important; }
+      .inv-wrap { padding: 0 !important; max-width: none !important; }
+      .inv-page { box-shadow: none; border-radius: 0; min-height: 297mm; break-after: page; page-break-after: always; margin: 0 !important; }
+      .inv-page:last-child { break-after: auto; page-break-after: auto; }
+      * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+-->
+<div class="inv-toolbar sticky top-0 z-20 border-b border-ink-line bg-sand/95 backdrop-blur">
+  <div class="mx-auto flex max-w-[900px] items-center justify-between gap-3 px-4 py-3">
+    <a href="/" class="flex items-center gap-2" aria-label="BAH Transporters"><img src="/brand_assets/bah-mark.svg" width="34" height="34" alt=""><span class="font-display text-lg font-extrabold tracking-[-0.04em]">BAH</span></a>
+    <div class="flex gap-2">
+      <a class="btn-wa btn-sm" id="askBtn" href="https://wa.me/447982144203" target="_blank" rel="noopener">WhatsApp us</a>
+      <button type="button" class="btn-dark btn-sm" id="printBtn">Print / save as PDF</button>
+    </div>
+  </div>
+</div>
+<main id="main" class="inv-wrap mx-auto max-w-[900px] space-y-6 px-3 py-6 sm:px-4 sm:py-10">
+  <div id="doc"><div class="inv-page p-10 text-center"><p class="text-ink-soft">Loading your invoice…</p></div></div>
+</main>
+<!--scripts
+  <script src="/assets/invoice.js?v={{version}}" defer></script>
+-->

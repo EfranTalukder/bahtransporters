@@ -1,0 +1,9 @@
+# Only for building and checking the site on this computer — not published.
+CLAUDE.md
+*.mjs
+src
+tailwind.config.js
+package.json
+brand_assets/logo-preview.html
+temporary screenshots
+.claude

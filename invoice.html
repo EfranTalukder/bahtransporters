@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Invoice — BAH Transporters</title>
+  <meta name="description" content="Your BAH Transporters invoice.">
+  <link rel="canonical" href="https://bahtransporters.com/invoice">
+  <meta name="theme-color" content="#F7F3EE">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BAH Transporters">
+  <meta property="og:title" content="Invoice — BAH Transporters">
+  <meta property="og:description" content="Your BAH Transporters invoice.">
+  <meta property="og:url" content="https://bahtransporters.com/invoice">
+  <meta property="og:image" content="https://bahtransporters.com/images/hero-sunset-747-1600.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="/brand_assets/bah-mark.svg">
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://jjvfstrplqlbnoglkhgf.supabase.co" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/site.css?v=mwhqv318">
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    .inv-page { background: #fff; border-radius: 1.75rem; box-shadow: 0 2px 4px rgba(28,25,22,.04), 0 24px 48px -24px rgba(28,25,22,.32); overflow: hidden; }
+    .inv-top { border-bottom: 4px solid #E25A2E; }
+    .inv-label { font-size: .68rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #8F877C; }
+    .inv-status { display: inline-flex; border-radius: 999px; padding: .3rem .8rem; font-size: .75rem; font-weight: 800; letter-spacing: .04em; }
+    .inv-status.paid { background: #E6F5EE; color: #177A4C; } .inv-status.part { background: #FDEEE7; color: #9E3714; }
+    .inv-status.unpaid { background: #FDECEC; color: #B42C32; } .inv-status.tbc { background: #EFE8DF; color: #5A534B; }
+    .inv-due.paid { background: #E6F5EE; } .inv-due.part, .inv-due.unpaid { background: #1C1916; color: #fff; } .inv-due.tbc { background: #EFE8DF; }
+    .inv-due.part .inv-label, .inv-due.unpaid .inv-label { color: rgba(255,255,255,.6); }
+    @page { size: A4; margin: 0; }
+    @media print {
+      html { font-size: 10.5px; }
+      body { background: #fff !important; }
+      .inv-toolbar { display: none !important; }
+      .inv-wrap { padding: 0 !important; max-width: none !important; }
+      .inv-page { box-shadow: none; border-radius: 0; min-height: 297mm; break-after: page; page-break-after: always; margin: 0 !important; }
+      .inv-page:last-child { break-after: auto; page-break-after: auto; }
+      * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body class="grain bg-sand-2">
+
+<div class="inv-toolbar sticky top-0 z-20 border-b border-ink-line bg-sand/95 backdrop-blur">
+  <div class="mx-auto flex max-w-[900px] items-center justify-between gap-3 px-4 py-3">
+    <a href="/" class="flex items-center gap-2" aria-label="BAH Transporters"><img src="/brand_assets/bah-mark.svg" width="34" height="34" alt=""><span class="font-display text-lg font-extrabold tracking-[-0.04em]">BAH</span></a>
+    <div class="flex gap-2">
+      <a class="btn-wa btn-sm" id="askBtn" href="https://wa.me/447982144203" target="_blank" rel="noopener">WhatsApp us</a>
+      <button type="button" class="btn-dark btn-sm" id="printBtn">Print / save as PDF</button>
+    </div>
+  </div>
+</div>
+<main id="main" class="inv-wrap mx-auto max-w-[900px] space-y-6 px-3 py-6 sm:px-4 sm:py-10">
+  <div id="doc"><div class="inv-page p-10 text-center"><p class="text-ink-soft">Loading your invoice…</p></div></div>
+</main>
+  <script src="/assets/config.js?v=mwhqv318"></script>
+  <script src="/assets/site.js?v=mwhqv318" defer></script>
+<script src="/assets/invoice.js?v=mwhqv318" defer></script>
+</body>
+</html>
