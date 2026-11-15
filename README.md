@@ -1,6 +1,6 @@
 # bahtransporters.com
 
-The BAH Transporters website — air freight between the UK and The Gambia. Static pages served by Vercel; the
+The BAH Transporters website — air freight between the UK and The Gambia. Static pages served by Vercel (project `bahtransporters`, live at https://bahtransporters.vercel.app; every push to `main` redeploys it); the
 booking page, tracking and invoices talk to the BAH Supabase backend (see the `bah.admin` repo).
 
 | Page | What it does |
