@@ -60,7 +60,7 @@
     const pageCount = 1 + (terms.length ? 1 : 0) + (guides.length ? 1 : 0);
     const brand = `
       <div class="flex items-center gap-3">
-        <img src="/brand_assets/bah-mark.svg" width="52" height="52" alt="" class="h-[52px] w-[52px]">
+        <img src="/brand_assets/bah-mark.svg" width="62" height="48" alt="" class="h-[48px] w-[62px]">
         <div class="leading-tight">
           <p class="font-display text-[1.25rem] font-extrabold tracking-[-0.03em]">Bah Transporters Ltd</p>
           <p class="text-[0.66rem] font-bold uppercase tracking-[0.24em] text-ember-dark">Air freight · UK ⇄ The Gambia</p>
